@@ -1,0 +1,45 @@
+  
+#headerTitle{
+    font-family: 'Text Me One', sans-serif;
+    font-size: 145px;
+    opacity: 0.65;
+    transition: 0.4s;
+    margin-top: calc(30vh - 45px);
+    position: relative;
+}
+#headerTitleSub{
+    position: absolute;
+    font-family: 'Text Me One', sans-serif;
+    font-size: 30px;
+    opacity: 0.65;
+    top: calc(30vh + 145px)
+}
+#headerTitle:hover{
+    opacity:1;
+    font-size: 150px;
+}
+#headerTitle::after{
+    content : "";
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    width: 100%;
+    height: 4px;
+    border-radius: 15px;
+    background : currentColor;
+    transform: scaleX(0);
+    transform-origin : right;
+    transition:  transform 300ms ease-in;
+}
+#headerTitle:hover::after{
+    transform: scaleX(1);
+    transform-origin : left;
+}
+.text{
+        display:flex;
+        justify-content: center;
+    }
+.homeHTML{
+    background-image: radial-gradient(rgb(230, 0, 0), rgb(255,165,0));
+    height: 100vh;
+}
